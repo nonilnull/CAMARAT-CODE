@@ -62,3 +62,43 @@ public class DrawView extends View{
     public DrawView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
+
+    public DrawView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        float l = 0;
+        float t = getHeight() - getPaddingBottom() - dipToPixels(getContext(),217);
+        float r = getWidth() - getPaddingRight();
+        float b = getHeight() - dipToPixels(getContext(),60);
+        canvas.drawRect(l,t,r,b,mLinePaint);
+        canvas.drawPath(path,mLinePaint);
+    }
+
+    public static float dipToPixels(Context context, float dipValue) {
+        DisplayMetrics metrics = context.getResources().getDisplayMetrics();
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dipValue, metrics);
+    }
+
+    public void drawPoint(float time, float duration, float y){
+        float p = time/duration;
+        float x = p*getWidth();
+        float z = getHeight() + y;
+        if(!start){
+            path.moveTo(x,z);
+            start = true;
+        }
+        path.lineTo(x,z);
+        invalidate();
+    }
+
+    public void clear(){
+        path.reset();
+        start = false;
+        invalidate();
+    }
+
+}
