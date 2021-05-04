@@ -15,4 +15,9 @@ import daimajia.com.eaing.R;
 public class EasingAdapter extends BaseAdapter {
 
     private Context mContext;
-    public EasingAdapter(
+    public EasingAdapter(Context context) {
+        mContext = context;
+    }
+
+    @Override
+    pub
