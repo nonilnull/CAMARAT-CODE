@@ -12,4 +12,7 @@ import com.daimajia.easing.Skill;
 
 import daimajia.com.eaing.R;
 
-public class EasingAdapter extends 
+public class EasingAdapter extends BaseAdapter {
+
+    private Context mContext;
+    public EasingAdapter(
