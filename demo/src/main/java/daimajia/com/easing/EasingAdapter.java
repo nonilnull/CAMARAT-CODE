@@ -20,4 +20,6 @@ public class EasingAdapter extends BaseAdapter {
     }
 
     @Override
-    pub
+    public int getCount() {
+        return Skill.values().length;
+    
