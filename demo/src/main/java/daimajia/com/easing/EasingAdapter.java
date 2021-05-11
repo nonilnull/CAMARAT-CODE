@@ -26,4 +26,8 @@ public class EasingAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int i) {
-        return Skill
+        return Skill.values()[i];
+    }
+
+    @Override
+    public long getItemId(int i) 
