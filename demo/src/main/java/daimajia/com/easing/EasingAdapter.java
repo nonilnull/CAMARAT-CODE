@@ -30,4 +30,9 @@ public class EasingAdapter extends BaseAdapter {
     }
 
     @Override
-    public long getItemId(int i) 
+    public long getItemId(int i) {
+        return i;
+    }
+
+    @Override
+    public View getView(int i, View view, ViewGro
