@@ -35,4 +35,6 @@ public class EasingAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGro
+    public View getView(int i, View view, ViewGroup viewGroup) {
+        Object o = getItem(i);
+        BaseEasingMethod b = ((Skill)o).get
