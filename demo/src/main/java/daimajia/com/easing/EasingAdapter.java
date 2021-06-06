@@ -40,3 +40,5 @@ public class EasingAdapter extends BaseAdapter {
         BaseEasingMethod b = ((Skill)o).getMethod(1000);
         int start = b.getClass().getName().lastIndexOf(".") + 1;
         String name = b.getClass().getName().substring(start);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.item,null);
+     
