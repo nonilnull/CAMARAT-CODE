@@ -41,4 +41,5 @@ public class EasingAdapter extends BaseAdapter {
         int start = b.getClass().getName().lastIndexOf(".") + 1;
         String name = b.getClass().getName().substring(start);
         View v = LayoutInflater.from(mContext).inflate(R.layout.item,null);
-     
+        TextView tv = (TextView)v.findViewById(R.id.list_item_text);
+        tv
