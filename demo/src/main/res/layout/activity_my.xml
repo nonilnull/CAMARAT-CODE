@@ -9,4 +9,6 @@
     tools:context=".MyActivity">
 
     <daimajia.com.easing.DrawView
-        android:id
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        and
