@@ -11,4 +11,6 @@
     <daimajia.com.easing.DrawView
         android:id="@+id/history"
         android:layout_width="match_parent"
-        and
+        android:layout_height="280dp" />
+    <View
+        android:layout_alignLeft="
