@@ -15,4 +15,6 @@
     <View
         android:layout_alignLeft="@+id/history"
         android:id="@+id/target"
-        android:lay
+        android:layout_width="8dp"
+        android:layout_alignBottom="@+id/history"
+        android:layout_h
