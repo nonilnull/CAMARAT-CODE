@@ -13,4 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="280dp" />
     <View
-        android:layout_alignLeft="
+        android:layout_alignLeft="@+id/history"
+        android:id="@+id/target"
+        android:lay
