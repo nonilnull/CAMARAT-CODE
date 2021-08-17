@@ -21,4 +21,6 @@
         android:layout_marginBottom="60dp"
         android:background="@drawable/circle"/>
     <ListView
-        android:layout_marginTop="2
+        android:layout_marginTop="280dp"
+        android:id="@+id/easing_list"
+        android:layout_width="matc
