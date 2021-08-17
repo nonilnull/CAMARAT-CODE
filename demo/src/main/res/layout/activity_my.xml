@@ -19,4 +19,6 @@
         android:layout_alignBottom="@+id/history"
         android:layout_height="8dp"
         android:layout_marginBottom="60dp"
-        android:background=
+        android:background="@drawable/circle"/>
+    <ListView
+        android:layout_marginTop="2
