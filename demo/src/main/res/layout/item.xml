@@ -6,3 +6,4 @@
     android:id="@+id/list_item_text"
     android:textSize="16sp"
     android:gravity="left|center_vertical"
+    android:padding="10dp" />
