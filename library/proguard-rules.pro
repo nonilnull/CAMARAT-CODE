@@ -9,4 +9,5 @@
 
 # Add any project specific keep options here:
 
-# If your pr
+# If your project uses WebView with JS, uncomment the following
+# and specify t
