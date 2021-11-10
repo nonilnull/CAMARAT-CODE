@@ -15,4 +15,5 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
--keep 
+-keep class com.daimajia.easing.** { *; }
+-keep interface com.daimajia.easin
