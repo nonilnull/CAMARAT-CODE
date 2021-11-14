@@ -16,4 +16,4 @@
 #   public *;
 #}
 -keep class com.daimajia.easing.** { *; }
--keep interface com.daimajia.easin
+-keep interface com.daimajia.easing.** { *; }
