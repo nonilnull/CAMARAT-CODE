@@ -26,4 +26,8 @@ package com.daimajia.easing;
 
 
 import android.animation.PropertyValuesHolder;
-import 
+import android.animation.ValueAnimator;
+
+public class Glider {
+
+    public static ValueAnim
