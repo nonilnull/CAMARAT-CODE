@@ -30,4 +30,5 @@ import android.animation.ValueAnimator;
 
 public class Glider {
 
-    public static ValueAnim
+    public static ValueAnimator glide(Skill skill, float duration, ValueAnimator animator) {
+        
