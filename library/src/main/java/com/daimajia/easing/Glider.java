@@ -34,4 +34,4 @@ public class Glider {
         return Glider.glide(skill, duration, animator, (BaseEasingMethod.EasingListener[]) null);
     }
 
-    public static ValueAnimator glide(Skill skill, float du
+    public static ValueAnimator glide(Skill skill, float duration, ValueAnimator animator, BaseEasingMethod.EasingListene
