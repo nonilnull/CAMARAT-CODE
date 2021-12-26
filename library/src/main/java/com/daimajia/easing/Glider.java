@@ -38,4 +38,9 @@ public class Glider {
         BaseEasingMethod t = skill.getMethod(duration);
 
         if (listeners != null)
-            t.addEasingListeners(listeners
+            t.addEasingListeners(listeners);
+
+        animator.setEvaluator(t);
+        return animator;
+    }
+
