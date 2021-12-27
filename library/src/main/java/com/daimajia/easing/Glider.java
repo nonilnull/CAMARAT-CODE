@@ -44,4 +44,5 @@ public class Glider {
         return animator;
     }
 
-    public static PropertyValuesHolder glide(Skill skill, float duration, P
+    public static PropertyValuesHolder glide(Skill skill, float duration, PropertyValuesHolder propertyValuesHolder) {
+        propertyValuesHolder.setE
