@@ -45,4 +45,5 @@ public class Glider {
     }
 
     public static PropertyValuesHolder glide(Skill skill, float duration, PropertyValuesHolder propertyValuesHolder) {
-        propertyValuesHolder.setE
+        propertyValuesHolder.setEvaluator(skill.getMethod(duration));
+        return proper
