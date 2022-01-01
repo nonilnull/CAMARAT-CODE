@@ -1,3 +1,4 @@
+
 /*
  * The MIT License (MIT)
  *
@@ -24,30 +25,19 @@
 
 package com.daimajia.easing;
 
-
-import android.animation.PropertyValuesHolder;
-import android.animation.ValueAnimator;
-
-public class Glider {
-
-    public static ValueAnimator glide(Skill skill, float duration, ValueAnimator animator) {
-        return Glider.glide(skill, duration, animator, (BaseEasingMethod.EasingListener[]) null);
-    }
-
-    public static ValueAnimator glide(Skill skill, float duration, ValueAnimator animator, BaseEasingMethod.EasingListener... listeners) {
-        BaseEasingMethod t = skill.getMethod(duration);
-
-        if (listeners != null)
-            t.addEasingListeners(listeners);
-
-        animator.setEvaluator(t);
-        return animator;
-    }
-
-    public static PropertyValuesHolder glide(Skill skill, float duration, PropertyValuesHolder propertyValuesHolder) {
-        propertyValuesHolder.setEvaluator(skill.getMethod(duration));
-        return propertyValuesHolder;
-    }
-
-
-}
+import com.daimajia.easing.back.BackEaseIn;
+import com.daimajia.easing.back.BackEaseInOut;
+import com.daimajia.easing.back.BackEaseOut;
+import com.daimajia.easing.bounce.BounceEaseIn;
+import com.daimajia.easing.bounce.BounceEaseInOut;
+import com.daimajia.easing.bounce.BounceEaseOut;
+import com.daimajia.easing.circ.CircEaseIn;
+import com.daimajia.easing.circ.CircEaseInOut;
+import com.daimajia.easing.circ.CircEaseOut;
+import com.daimajia.easing.cubic.CubicEaseIn;
+import com.daimajia.easing.cubic.CubicEaseInOut;
+import com.daimajia.easing.cubic.CubicEaseOut;
+import com.daimajia.easing.elastic.ElasticEaseIn;
+import com.daimajia.easing.elastic.ElasticEaseOut;
+import com.daimajia.easing.expo.ExpoEaseIn;
+import com.daimajia.easing.expo.ExpoEaseInOut;
