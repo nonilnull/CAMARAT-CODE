@@ -41,3 +41,64 @@ import com.daimajia.easing.elastic.ElasticEaseIn;
 import com.daimajia.easing.elastic.ElasticEaseOut;
 import com.daimajia.easing.expo.ExpoEaseIn;
 import com.daimajia.easing.expo.ExpoEaseInOut;
+import com.daimajia.easing.expo.ExpoEaseOut;
+import com.daimajia.easing.quad.QuadEaseIn;
+import com.daimajia.easing.quad.QuadEaseInOut;
+import com.daimajia.easing.quad.QuadEaseOut;
+import com.daimajia.easing.quint.QuintEaseIn;
+import com.daimajia.easing.quint.QuintEaseInOut;
+import com.daimajia.easing.quint.QuintEaseOut;
+import com.daimajia.easing.sine.SineEaseIn;
+import com.daimajia.easing.sine.SineEaseInOut;
+import com.daimajia.easing.sine.SineEaseOut;
+import com.daimajia.easing.linear.Linear;
+
+
+public enum  Skill {
+
+    BackEaseIn(BackEaseIn.class),
+    BackEaseOut(BackEaseOut.class),
+    BackEaseInOut(BackEaseInOut.class),
+
+    BounceEaseIn(BounceEaseIn.class),
+    BounceEaseOut(BounceEaseOut.class),
+    BounceEaseInOut(BounceEaseInOut.class),
+
+    CircEaseIn(CircEaseIn.class),
+    CircEaseOut(CircEaseOut.class),
+    CircEaseInOut(CircEaseInOut.class),
+
+    CubicEaseIn(CubicEaseIn.class),
+    CubicEaseOut(CubicEaseOut.class),
+    CubicEaseInOut(CubicEaseInOut.class),
+
+    ElasticEaseIn(ElasticEaseIn.class),
+    ElasticEaseOut(ElasticEaseOut.class),
+
+    ExpoEaseIn(ExpoEaseIn.class),
+    ExpoEaseOut(ExpoEaseOut.class),
+    ExpoEaseInOut(ExpoEaseInOut.class),
+
+    QuadEaseIn(QuadEaseIn.class),
+    QuadEaseOut(QuadEaseOut.class),
+    QuadEaseInOut(QuadEaseInOut.class),
+
+    QuintEaseIn(QuintEaseIn.class),
+    QuintEaseOut(QuintEaseOut.class),
+    QuintEaseInOut(QuintEaseInOut.class),
+
+    SineEaseIn(SineEaseIn.class),
+    SineEaseOut(SineEaseOut.class),
+    SineEaseInOut(SineEaseInOut.class),
+
+    Linear(Linear.class);
+
+
+    private Class easingMethod;
+
+    private Skill(Class clazz) {
+        easingMethod = clazz;
+    }
+
+    public BaseEasingMethod getMethod(float duration) {
+        try {
