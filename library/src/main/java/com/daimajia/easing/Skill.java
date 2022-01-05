@@ -102,3 +102,10 @@ public enum  Skill {
 
     public BaseEasingMethod getMethod(float duration) {
         try {
+            return (BaseEasingMethod)easingMethod.getConstructor(float.class).newInstance(duration);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Error("Can not init easingMethod instance");
+        }
+    }
+}
