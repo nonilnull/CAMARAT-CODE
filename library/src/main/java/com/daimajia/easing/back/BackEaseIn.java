@@ -26,4 +26,8 @@ package com.daimajia.easing.back;
 
 import com.daimajia.easing.BaseEasingMethod;
 
-public class BackEaseIn exte
+public class BackEaseIn extends BaseEasingMethod{
+
+    private float s = 1.70158f;
+
+    pu
