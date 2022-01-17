@@ -30,4 +30,8 @@ public class BackEaseIn extends BaseEasingMethod{
 
     private float s = 1.70158f;
 
-    pu
+    public BackEaseIn(float duration) {
+        super(duration);
+    }
+
+    public Back
