@@ -40,4 +40,6 @@ public class BackEaseIn extends BaseEasingMethod{
     }
 
     @Override
-    public Float calculate(float t, float b, float c, 
+    public Float calculate(float t, float b, float c, float d) {
+        return c*(t/=d)*t*((s+1)*t - s) + b;
+   
