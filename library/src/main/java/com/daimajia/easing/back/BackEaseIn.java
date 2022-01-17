@@ -38,3 +38,6 @@ public class BackEaseIn extends BaseEasingMethod{
         this(duration);
         s = back;
     }
+
+    @Override
+    public Float calculate(float t, float b, float c, 
