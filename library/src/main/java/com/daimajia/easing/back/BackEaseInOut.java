@@ -1,3 +1,4 @@
+
 /*
  * The MIT License (MIT)
  *
@@ -26,22 +27,22 @@ package com.daimajia.easing.back;
 
 import com.daimajia.easing.BaseEasingMethod;
 
-public class BackEaseIn extends BaseEasingMethod{
+public class BackEaseInOut extends BaseEasingMethod{
 
     private float s = 1.70158f;
 
-    public BackEaseIn(float duration) {
+    public BackEaseInOut(float duration) {
         super(duration);
     }
 
-    public BackEaseIn(float duration, float back){
+    public BackEaseInOut(float duration, float back){
         this(duration);
         s = back;
     }
 
     @Override
     public Float calculate(float t, float b, float c, float d) {
-        return c*(t/=d)*t*((s+1)*t - s) + b;
+        if ((t /= d / 2) < 1) return c / 2 * (t * t * ((s + 1) * t - s)) + b;
+        return c / 2 * ((t -= 2) * t * ((s + 1) * t + s) + 2) + b;
     }
-
 }
