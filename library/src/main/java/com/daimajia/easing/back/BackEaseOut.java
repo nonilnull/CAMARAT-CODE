@@ -22,4 +22,8 @@
  * SOFTWARE.
  */
 
-package com.daimajia.easing
+package com.daimajia.easing.back;
+
+import com.daimajia.easing.BaseEasingMethod;
+
+public class BackEase
