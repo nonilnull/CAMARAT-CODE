@@ -34,4 +34,6 @@ public class BackEaseOut extends BaseEasingMethod{
         super(duration);
     }
 
-    public BackEaseOu
+    public BackEaseOut(float duration, float back){
+        this(duration);
+        s 
