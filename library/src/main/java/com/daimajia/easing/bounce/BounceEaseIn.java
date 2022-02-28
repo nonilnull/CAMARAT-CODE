@@ -37,4 +37,6 @@ public class BounceEaseIn extends BaseEasingMethod {
 
     @Override
     public Float calculate(float t, float b, float c, float d) {
-        return c - mBounceEaseOut.cal
+        return c - mBounceEaseOut.calculate(d-t, 0, c, d) + b;
+    }
+}
