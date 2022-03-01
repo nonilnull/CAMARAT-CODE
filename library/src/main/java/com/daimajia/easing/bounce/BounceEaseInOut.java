@@ -1,4 +1,6 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c)
+ * Copyright (c) 2014 daimajia
+ *
+ * Permission is hereby granted, free of charge, to any per
