@@ -24,4 +24,8 @@
 
 package com.daimajia.easing.bounce;
 
-import com.daimajia.easin
+import com.daimajia.easing.BaseEasingMethod;
+
+public class BounceEaseInOut extends BaseEasingMethod{
+
+    priv
