@@ -42,4 +42,6 @@ public class BounceEaseInOut extends BaseEasingMethod{
         if (t < d/2)
             return mBounceEaseIn.calculate (t*2, 0, c, d) * .5f + b;
         else
-            return mBounceEaseOut.calculate (t*2
+            return mBounceEaseOut.calculate (t*2-d, 0, c, d) * .5f + c*.5f + b;
+    }
+}
