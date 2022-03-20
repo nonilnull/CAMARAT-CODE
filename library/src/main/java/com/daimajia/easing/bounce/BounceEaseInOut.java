@@ -34,4 +34,8 @@ public class BounceEaseInOut extends BaseEasingMethod{
     public BounceEaseInOut(float duration){
         super(duration);
         mBounceEaseIn = new BounceEaseIn(duration);
-        mBounceEaseOut = new Bounce
+        mBounceEaseOut = new BounceEaseOut(duration);
+    }
+
+    @Override
+    public Float calculate(float t, float b,
