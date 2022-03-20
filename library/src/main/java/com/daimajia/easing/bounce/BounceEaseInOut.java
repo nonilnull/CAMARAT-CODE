@@ -40,4 +40,6 @@ public class BounceEaseInOut extends BaseEasingMethod{
     @Override
     public Float calculate(float t, float b, float c, float d) {
         if (t < d/2)
-            return mBounceEaseIn.calculat
+            return mBounceEaseIn.calculate (t*2, 0, c, d) * .5f + b;
+        else
+            return mBounceEaseOut.calculate (t*2
