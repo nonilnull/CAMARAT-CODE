@@ -29,4 +29,8 @@ import com.daimajia.easing.BaseEasingMethod;
 public class BounceEaseOut extends BaseEasingMethod {
 
     public BounceEaseOut(float duration) {
- 
+        super(duration);
+    }
+
+    @Override
+    public Float calculate(float t
