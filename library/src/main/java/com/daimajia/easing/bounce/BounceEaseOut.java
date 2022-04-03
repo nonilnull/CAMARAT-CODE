@@ -33,4 +33,6 @@ public class BounceEaseOut extends BaseEasingMethod {
     }
 
     @Override
-    public Float calculate(float t
+    public Float calculate(float t, float b, float c, float d) {
+        if ((t/=d) < (1/2.75f)) {
+         
