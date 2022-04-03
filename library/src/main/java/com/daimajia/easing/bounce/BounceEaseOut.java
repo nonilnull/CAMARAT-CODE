@@ -22,4 +22,8 @@
  * SOFTWARE.
  */
 
-package com.daimajia.eas
+package com.daimajia.easing.bounce;
+
+import com.daimajia.easing.BaseEasingMethod;
+
+public class BounceEaseOut extends
