@@ -37,4 +37,5 @@ public class BounceEaseOut extends BaseEasingMethod {
         if ((t/=d) < (1/2.75f)) {
             return c*(7.5625f*t*t) + b;
         } else if (t < (2/2.75f)) {
-            r
+            return c*(7.5625f*(t-=(1.5f/2.75f))*t + .75f) + b;
+        } else if (t < (2.5/2
