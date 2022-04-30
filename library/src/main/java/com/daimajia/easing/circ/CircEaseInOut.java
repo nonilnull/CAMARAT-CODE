@@ -22,4 +22,8 @@
  * SOFTWARE.
  */
 
-package com.daimajia.easing.cir
+package com.daimajia.easing.circ;
+
+import com.daimajia.easing.BaseEasingMethod;
+
+public class Circ
