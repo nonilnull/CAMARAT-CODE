@@ -26,4 +26,6 @@ package com.daimajia.easing.circ;
 
 import com.daimajia.easing.BaseEasingMethod;
 
-public class Circ
+public class CircEaseInOut extends BaseEasingMethod{
+
+    public CircE
