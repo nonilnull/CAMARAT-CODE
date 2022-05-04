@@ -28,4 +28,8 @@ import com.daimajia.easing.BaseEasingMethod;
 
 public class CircEaseInOut extends BaseEasingMethod{
 
-    public CircE
+    public CircEaseInOut(float duration) {
+        super(duration);
+    }
+
+    @Ove
