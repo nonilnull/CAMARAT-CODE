@@ -32,4 +32,6 @@ public class CircEaseInOut extends BaseEasingMethod{
         super(duration);
     }
 
-    @Ove
+    @Override
+    public Float calculate(float t, float b, float c, float d) {
+  
