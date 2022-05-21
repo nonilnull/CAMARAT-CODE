@@ -24,4 +24,8 @@
 
 package com.daimajia.easing.cubic;
 
-import com.daimajia.easing.BaseEasingMet
+import com.daimajia.easing.BaseEasingMethod;
+
+public class CubicEaseIn extends BaseEasingMethod{
+
+    public CubicEase
