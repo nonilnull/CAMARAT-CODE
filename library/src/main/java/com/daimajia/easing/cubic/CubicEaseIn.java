@@ -22,4 +22,6 @@
  * SOFTWARE.
  */
 
-package
+package com.daimajia.easing.cubic;
+
+import com.daimajia.easing.BaseEasingMet
