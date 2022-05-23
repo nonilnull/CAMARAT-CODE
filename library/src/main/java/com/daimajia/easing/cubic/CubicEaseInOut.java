@@ -1,3 +1,4 @@
+
 /*
  * The MIT License (MIT)
  *
@@ -26,14 +27,17 @@ package com.daimajia.easing.cubic;
 
 import com.daimajia.easing.BaseEasingMethod;
 
-public class CubicEaseIn extends BaseEasingMethod{
+public class CubicEaseInOut extends BaseEasingMethod {
 
-    public CubicEaseIn(float duration) {
+    public CubicEaseInOut(float duration) {
         super(duration);
     }
 
     @Override
     public Float calculate(float t, float b, float c, float d) {
-        return c*(t/=d)*t*t + b;
+        if ((t/=d/2) < 1)
+            return c/2*t*t*t + b;
+
+        return c/2*((t-=2)*t*t + 2) + b;
     }
 }
