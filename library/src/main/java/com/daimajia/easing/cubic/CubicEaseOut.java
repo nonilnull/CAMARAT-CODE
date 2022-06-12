@@ -28,4 +28,9 @@ import com.daimajia.easing.BaseEasingMethod;
 
 public class CubicEaseOut extends BaseEasingMethod {
 
-    public CubicEaseO
+    public CubicEaseOut(float duration) {
+        super(duration);
+    }
+
+    @Override
+    public Floa
