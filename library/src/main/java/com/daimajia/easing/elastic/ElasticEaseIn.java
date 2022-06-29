@@ -24,4 +24,6 @@
 
 package com.daimajia.easing.elastic;
 
-import com.dai
+import com.daimajia.easing.BaseEasingMethod;
+
+public class ElasticEaseIn extends BaseEasing
