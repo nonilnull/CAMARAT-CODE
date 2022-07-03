@@ -26,4 +26,7 @@ package com.daimajia.easing.elastic;
 
 import com.daimajia.easing.BaseEasingMethod;
 
-public class ElasticEaseIn extends BaseEasing
+public class ElasticEaseIn extends BaseEasingMethod{
+
+    public ElasticEaseIn(float duration) {
+        super(du
