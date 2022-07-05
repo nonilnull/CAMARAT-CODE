@@ -29,4 +29,8 @@ import com.daimajia.easing.BaseEasingMethod;
 public class ElasticEaseIn extends BaseEasingMethod{
 
     public ElasticEaseIn(float duration) {
-        super(du
+        super(duration);
+    }
+
+    @Override
+    public Float calculate(float t, float b, flo
