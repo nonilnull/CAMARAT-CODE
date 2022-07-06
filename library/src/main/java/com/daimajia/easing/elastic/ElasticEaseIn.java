@@ -35,3 +35,7 @@ public class ElasticEaseIn extends BaseEasingMethod{
     @Override
     public Float calculate(float t, float b, float c, float d) {
         if (t==0) return b;  if ((t/=d)==1) return b+c;
+        float p=d*.3f;
+        float a=c;
+        float s=p/4;
+       
