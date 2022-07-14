@@ -38,4 +38,6 @@ public class ElasticEaseIn extends BaseEasingMethod{
         float p=d*.3f;
         float a=c;
         float s=p/4;
-        return -(a*(float)Math.pow(2,10*(t-=1)) * (float)Math.sin( (t*d-s)*(2*(float)Mat
+        return -(a*(float)Math.pow(2,10*(t-=1)) * (float)Math.sin( (t*d-s)*(2*(float)Math.PI)/p )) + b;
+    }
+}
