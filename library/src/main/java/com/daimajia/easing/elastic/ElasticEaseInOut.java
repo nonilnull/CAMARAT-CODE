@@ -2,4 +2,6 @@
  *
  *  * The MIT License (MIT)
  *  *
- *  * Copyri
+ *  * Copyright (c) 2014 daimajia
+ *  *
+ *  * Permission is hereby grant
