@@ -26,4 +26,7 @@
 
 package com.daimajia.easing.elastic;
 
-import 
+import com.daimajia.easing.BaseEasingMethod;
+
+public class ElasticEaseInOut extends BaseEasingMethod{
+   
