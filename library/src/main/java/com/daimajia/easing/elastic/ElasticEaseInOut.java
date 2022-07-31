@@ -33,4 +33,6 @@ public class ElasticEaseInOut extends BaseEasingMethod{
         super(duration);
     }
 
-    @Over
+    @Override
+    public Float calculate(float t, float b, float c, float d) {
+        if (t=
