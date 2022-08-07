@@ -13,3 +13,32 @@
  *
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+package com.daimajia.easing.elastic;
+
+import com.daimajia.easing.BaseEasingMethod;
+
+public class ElasticEaseOut extends BaseEasingMethod{
+
+    public ElasticEaseOut(float duration) {
+        super(duration);
+    }
+
+    @Override
+    public Float calculate(float t, float b, float c, float d) {
+        if (t==0) return b;  if ((t/=d)==1) return b+c;
+        float p=d*.3f;
+        float a=c;
+        float s=p/4;
+        return (a*(float)Math.pow(2,-10*t) * (float)Math.sin( (t*d-s)*(2*(float)Math.PI)/p ) + c + b);
+    }
+}
