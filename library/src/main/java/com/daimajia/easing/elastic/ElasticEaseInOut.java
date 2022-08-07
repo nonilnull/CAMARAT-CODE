@@ -40,4 +40,6 @@ public class ElasticEaseInOut extends BaseEasingMethod{
         float a=c;
         float s=p/4;
         if (t < 1) return -.5f*(a*(float)Math.pow(2,10*(t-=1)) * (float)Math.sin( (t*d-s)*(2*(float)Math.PI)/p )) + b;
-        return a*(float)Math.pow(2,-10*(t-=1)) * (float)Math.si
+        return a*(float)Math.pow(2,-10*(t-=1)) * (float)Math.sin( (t*d-s)*(2*(float)Math.PI)/p )*.5f + c + b;
+    }
+}
