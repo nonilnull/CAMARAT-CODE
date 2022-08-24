@@ -22,4 +22,6 @@
  * SOFTWARE.
  */
 
-package com.dai
+package com.daimajia.easing.expo;
+
+import com.daimajia.easing.BaseEasingMeth
