@@ -1,3 +1,4 @@
+
 /*
  * The MIT License (MIT)
  *
@@ -26,13 +27,16 @@ package com.daimajia.easing.expo;
 
 import com.daimajia.easing.BaseEasingMethod;
 
-public class ExpoEaseIn extends BaseEasingMethod{
-    public ExpoEaseIn(float duration) {
+public class ExpoEaseInOut extends BaseEasingMethod{
+    public ExpoEaseInOut(float duration) {
         super(duration);
     }
 
     @Override
     public Float calculate(float t, float b, float c, float d) {
-        return (t==0) ? b : c * (float)Math.pow(2, 10 * (t/d - 1)) + b;
+        if (t==0) return b;
+        if (t==d) return b+c;
+        if ((t/=d/2) < 1) return c/2 * (float)Math.pow(2, 10 * (t - 1)) + b;
+        return c/2 * (-(float)Math.pow(2, -10 * --t) + 2) + b;
     }
 }
