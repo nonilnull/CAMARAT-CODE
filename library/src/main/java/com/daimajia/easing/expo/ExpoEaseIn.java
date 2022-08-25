@@ -27,4 +27,9 @@ package com.daimajia.easing.expo;
 import com.daimajia.easing.BaseEasingMethod;
 
 public class ExpoEaseIn extends BaseEasingMethod{
-    public ExpoEaseI
+    public ExpoEaseIn(float duration) {
+        super(duration);
+    }
+
+    @Override
+    public Float ca
