@@ -32,4 +32,5 @@ public class ExpoEaseIn extends BaseEasingMethod{
     }
 
     @Override
-    public Float ca
+    public Float calculate(float t, float b, float c, float d) {
+        return (t==0) ? b : c * (float)Math.po
