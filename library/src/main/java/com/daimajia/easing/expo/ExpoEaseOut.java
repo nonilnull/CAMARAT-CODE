@@ -24,4 +24,6 @@
 
 package com.daimajia.easing.expo;
 
-import co
+import com.daimajia.easing.BaseEasingMethod;
+
+public class ExpoEaseOut extends Bas
