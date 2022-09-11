@@ -26,4 +26,6 @@ package com.daimajia.easing.expo;
 
 import com.daimajia.easing.BaseEasingMethod;
 
-public class ExpoEaseOut extends Bas
+public class ExpoEaseOut extends BaseEasingMethod{
+    public ExpoEaseOut(float duration) {
+        super(
