@@ -28,4 +28,8 @@ import com.daimajia.easing.BaseEasingMethod;
 
 public class ExpoEaseOut extends BaseEasingMethod{
     public ExpoEaseOut(float duration) {
-        super(
+        super(duration);
+    }
+
+    @Override
+    public Float calculate(float t, float b, float
