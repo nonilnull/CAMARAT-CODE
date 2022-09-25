@@ -26,4 +26,7 @@
 
 package com.daimajia.easing.linear;
 
-import com.daimajia.easin
+import com.daimajia.easing.BaseEasingMethod;
+
+public class Linear extends BaseEasingMethod{
+  
