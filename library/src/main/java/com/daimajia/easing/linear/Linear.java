@@ -34,4 +34,6 @@ public class Linear extends BaseEasingMethod{
     }
 
     @Override
-    public Flo
+    public Float calculate(float t, float b, float c, float d) {
+        return c*t/d + b;
+   
