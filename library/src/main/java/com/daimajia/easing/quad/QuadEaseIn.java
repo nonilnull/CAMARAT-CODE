@@ -32,4 +32,7 @@ public class QuadEaseIn extends BaseEasingMethod{
     }
 
     @Override
-    public Float calcu
+    public Float calculate(float t, float b, float c, float d) {
+        return c*(t/=d)*t + b;
+    }
+}
