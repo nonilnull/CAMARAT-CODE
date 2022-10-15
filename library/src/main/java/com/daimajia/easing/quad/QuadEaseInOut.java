@@ -1,3 +1,4 @@
+
 /*
  * The MIT License (MIT)
  *
@@ -26,13 +27,14 @@ package com.daimajia.easing.quad;
 
 import com.daimajia.easing.BaseEasingMethod;
 
-public class QuadEaseIn extends BaseEasingMethod{
-    public QuadEaseIn(float duration) {
+public class QuadEaseInOut extends BaseEasingMethod{
+    public QuadEaseInOut(float duration) {
         super(duration);
     }
 
     @Override
     public Float calculate(float t, float b, float c, float d) {
-        return c*(t/=d)*t + b;
+        if ((t/=d/2) < 1) return c/2*t*t + b;
+        return -c/2 * ((--t)*(t-2) - 1) + b;
     }
 }
