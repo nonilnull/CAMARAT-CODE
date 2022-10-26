@@ -24,4 +24,7 @@
 
 package com.daimajia.easing.quad;
 
-import com.daimajia.easing.
+import com.daimajia.easing.BaseEasingMethod;
+
+public class QuadEaseOut extends BaseEasingMethod{
+    
