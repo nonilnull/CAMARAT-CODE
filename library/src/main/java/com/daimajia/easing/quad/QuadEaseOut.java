@@ -27,4 +27,8 @@ package com.daimajia.easing.quad;
 import com.daimajia.easing.BaseEasingMethod;
 
 public class QuadEaseOut extends BaseEasingMethod{
-    
+    public QuadEaseOut(float duration) {
+        super(duration);
+    }
+
+ 
