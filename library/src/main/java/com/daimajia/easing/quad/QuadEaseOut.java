@@ -31,4 +31,6 @@ public class QuadEaseOut extends BaseEasingMethod{
         super(duration);
     }
 
- 
+    @Override
+    public Float calculate(float t, float b, float c, float d) {
+     
