@@ -22,4 +22,8 @@
  * SOFTWARE.
  */
 
-package com.daimajia.easing.quint
+package com.daimajia.easing.quint;
+
+import com.daimajia.easing.BaseEasingMethod;
+
+public class QuintEa
