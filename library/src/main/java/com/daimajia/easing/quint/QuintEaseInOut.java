@@ -24,4 +24,6 @@
 
 package com.daimajia.easing.quint;
 
-import co
+import com.daimajia.easing.BaseEasingMethod;
+
+public class QuintEaseInOut exten
