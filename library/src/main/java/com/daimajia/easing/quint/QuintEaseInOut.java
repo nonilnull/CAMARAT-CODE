@@ -26,4 +26,6 @@ package com.daimajia.easing.quint;
 
 import com.daimajia.easing.BaseEasingMethod;
 
-public class QuintEaseInOut exten
+public class QuintEaseInOut extends BaseEasingMethod{
+    public QuintEaseInOut(float duration) {
+        super(du
