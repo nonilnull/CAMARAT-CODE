@@ -28,4 +28,8 @@ import com.daimajia.easing.BaseEasingMethod;
 
 public class QuintEaseInOut extends BaseEasingMethod{
     public QuintEaseInOut(float duration) {
-        super(du
+        super(duration);
+    }
+
+    @Override
+    public Float calculate(float t, float b, float c, fl
