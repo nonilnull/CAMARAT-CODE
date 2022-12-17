@@ -1,3 +1,4 @@
+
 /*
  * The MIT License (MIT)
  *
@@ -26,14 +27,13 @@ package com.daimajia.easing.quint;
 
 import com.daimajia.easing.BaseEasingMethod;
 
-public class QuintEaseInOut extends BaseEasingMethod{
-    public QuintEaseInOut(float duration) {
+public class QuintEaseOut extends BaseEasingMethod{
+    public QuintEaseOut(float duration) {
         super(duration);
     }
 
     @Override
     public Float calculate(float t, float b, float c, float d) {
-        if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
-        return c/2*((t-=2)*t*t*t*t + 2) + b;
+        return c*((t=t/d-1)*t*t*t*t + 1) + b;
     }
 }
