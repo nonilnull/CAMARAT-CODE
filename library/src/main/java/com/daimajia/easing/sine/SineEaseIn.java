@@ -34,4 +34,6 @@ public class SineEaseIn extends BaseEasingMethod{
 
     @Override
     public Float calculate(float t, float b, float c, float d) {
-        retur
+        return -c * (float)Math.cos(t/d * (Math.PI/2)) + c + b;
+    }
+}
