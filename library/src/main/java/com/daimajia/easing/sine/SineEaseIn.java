@@ -33,4 +33,5 @@ public class SineEaseIn extends BaseEasingMethod{
     }
 
     @Override
-    p
+    public Float calculate(float t, float b, float c, float d) {
+        retur
