@@ -28,4 +28,9 @@ import com.daimajia.easing.BaseEasingMethod;
 
 public class SineEaseIn extends BaseEasingMethod{
 
-    public SineEase
+    public SineEaseIn(float duration) {
+        super(duration);
+    }
+
+    @Override
+    p
