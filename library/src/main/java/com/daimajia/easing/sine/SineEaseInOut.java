@@ -24,4 +24,7 @@
 
 package com.daimajia.easing.sine;
 
-import com.daimajia.easi
+import com.daimajia.easing.BaseEasingMethod;
+
+public class SineEaseInOut extends BaseEasingMethod{
+    pub
