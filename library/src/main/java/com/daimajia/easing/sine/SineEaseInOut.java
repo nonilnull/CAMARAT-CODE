@@ -31,4 +31,6 @@ public class SineEaseInOut extends BaseEasingMethod{
         super(duration);
     }
 
-    @Overrid
+    @Override
+    public Float calculate(float t, float b, float c, float d) {
+       
