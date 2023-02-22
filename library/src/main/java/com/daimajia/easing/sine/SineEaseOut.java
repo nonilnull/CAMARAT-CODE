@@ -22,4 +22,8 @@
  * SOFTWARE.
  */
 
-package com.daimajia.easing.s
+package com.daimajia.easing.sine;
+
+import com.daimajia.easing.BaseEasingMethod;
+
+public class S
