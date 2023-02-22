@@ -26,4 +26,6 @@ package com.daimajia.easing.sine;
 
 import com.daimajia.easing.BaseEasingMethod;
 
-public class S
+public class SineEaseOut extends BaseEasingMethod{
+    public SineEaseOut(float duration) {
+        super(dura
