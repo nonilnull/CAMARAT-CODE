@@ -28,4 +28,8 @@ import com.daimajia.easing.BaseEasingMethod;
 
 public class SineEaseOut extends BaseEasingMethod{
     public SineEaseOut(float duration) {
-        super(dura
+        super(duration);
+    }
+
+    @Override
+    public Float calculate(float t, float b, f
